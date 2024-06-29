@@ -53,6 +53,15 @@ const VideoCarousel = () => {
     let span = videoSpanRef.current;
 
     if (span[videoId]) {
+      // set the width of the progress bar
+      gsap.to(videoDivRef.current[videoId], {
+        width:
+          window.innerWidth < 760
+            ? "10vw" // mobile
+            : window.innerWidth < 1200
+            ? "10vw" // tablet
+            : "4vw", // laptop
+      });
       // animation to move the indicator
       let anim = gsap.to(span[videoId], {
         onUpdate: () => {
@@ -62,15 +71,7 @@ const VideoCarousel = () => {
           if (progress != currentProgress) {
             currentProgress = progress;
 
-            // set the width of the progress bar
-            gsap.to(videoDivRef.current[videoId], {
-              width:
-                window.innerWidth < 760
-                  ? "10vw" // mobile
-                  : window.innerWidth < 1200
-                  ? "10vw" // tablet
-                  : "4vw", // laptop
-            });
+            
 
             // set the background color of the progress bar
             gsap.to(span[videoId], {
