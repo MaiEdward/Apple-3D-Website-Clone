@@ -58,6 +58,7 @@ const Model = () => {
         <h1 id="heading" className="section-heading">
           Take a closer look.
         </h1>
+        <h2 id="heading" className="text-gray font-medium opacity-0 translate-y-20 text-lg pt-3 pl-3"> Click and turn to explore iPhone.</h2>
 
         <div className="flex flex-col items-center mt-5">
           <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
