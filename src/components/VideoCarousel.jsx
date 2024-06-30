@@ -71,8 +71,6 @@ const VideoCarousel = () => {
           if (progress != currentProgress) {
             currentProgress = progress;
 
-            
-
             // set the background color of the progress bar
             gsap.to(span[videoId], {
               width: `${currentProgress}%`,
