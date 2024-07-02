@@ -62,7 +62,7 @@ const Model = () => {
 
         <div className="flex flex-col items-center mt-5">
           <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
-            <ModelView 
+          <ModelView 
               index={1}
               groupRef={small}
               gsapType="view1"
@@ -71,7 +71,6 @@ const Model = () => {
               item={model}
               size={size}
             />  
-
             <ModelView 
               index={2}
               groupRef={large}
@@ -81,7 +80,6 @@ const Model = () => {
               item={model}
               size={size}
             />
-
             <Canvas
               className="w-full h-full"
               style={{
@@ -96,6 +94,7 @@ const Model = () => {
             >
               <View.Port />
             </Canvas>
+            
           </div>
 
           <div className="mx-auto w-full">
