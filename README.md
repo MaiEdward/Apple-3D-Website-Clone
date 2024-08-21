@@ -9,4 +9,4 @@ Currently, two official plugins are available:
 
 # Object animation with GSAP
 
-# Delpoyed here: https://apple-3d-website.onrender.com
+# Deployed here: https://apple-3d-website.onrender.com
